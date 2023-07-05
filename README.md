@@ -20,7 +20,7 @@ allprojects {
 **Step 2.** Add the dependency below to your module's build.gradle file
 ```kotlin
 dependencies {
-	        implementation 'com.github.khan-mujeeb:Button-Morphing-Animation:Tag'
+	        implementation 'com.github.khan-mujeeb:Button-Morphing-Animation:1.0.2'
 	}
 ```
 
@@ -40,4 +40,13 @@ binding.btn2.text = "Let's get Started"
         binding.btn2.setOnClickListener {
             binding.btn2. setUIState(MorphButton.UIState.Loading)
         }
+```
+
+## Customizations
+```kotlin
+        binding.btn.toBgColor = getColor(R.color.sea_green)
+        binding.btn.fromBgColor = getColor(R.color.white)
+        binding.btn.toTextColor = getColor(R.color.white)
+        binding.btn.fromTextColor = getColor(R.color.black)
+        binding.btn.iconDrawable = getDrawable(R.drawable.browser_new)!!
 ```
